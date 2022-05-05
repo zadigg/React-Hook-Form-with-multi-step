@@ -59,7 +59,7 @@ function App() {
   return (
     <div>
       <div
-        className={` min-h-screen  flex flex-col items-start text-gray-900 antialiased relative ${
+        className={` min-h-screen W-[100%] flex flex-col items-start text-gray-900 antialiased relative ${
           darkMode ? "bg-slate-900" : "bg-green-900"
         } `}
       >
@@ -67,7 +67,9 @@ function App() {
           <button
             onClick={handleClick}
             className={` px-3 py-1 rounded-md mt-3 ${
-              darkMode ? "bg-gray-300" : "bg-slate-900 text-slate-200"
+              darkMode
+                ? "bg-gray-300 text-black"
+                : "bg-slate-900 text-slate-200"
             }`}
           >
             {darkMode ? "💡 light" : "🌙 dark"}
@@ -83,7 +85,7 @@ function App() {
           }`}
         ></div>
         {/*  */}
-        <div className="mx-auto z-10 mt-30 2xl:mt-48 text-center">
+        <div className="mx-auto z-10 mt-30 2xl:mt-48 text-center ">
           <h1 className="text-white text-5xl font-semibold">
             React <span className="text-yellow-500">Hook Form</span>
           </h1>
@@ -212,7 +214,7 @@ function App() {
 
               {formStep === 3 && (
                 <section>
-                  <h2 className="font-semibold text-3xl mb-8">
+                  <h2 className="font-semibold text-3xl mb-8 ">
                     Congratulation
                   </h2>
                 </section>
